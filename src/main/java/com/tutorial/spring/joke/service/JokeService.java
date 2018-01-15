@@ -17,9 +17,11 @@ public class JokeService implements IJokeService {
 	
 	/**
 	 * default constructor
+	 * 
+	 * @param	ChuckNorrisQuotes will get injected by java based configuration
 	 */
-	public JokeService() {
-		chuckNorrisQuotes = new ChuckNorrisQuotes();
+	public JokeService(ChuckNorrisQuotes chuckNorrisQuotes) {
+		this.chuckNorrisQuotes = chuckNorrisQuotes;
 	}
 	
 	public String getJoke() {
