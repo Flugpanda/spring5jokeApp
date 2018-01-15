@@ -1,8 +1,5 @@
 package com.tutorial.spring.joke.config;
 
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-
 import guru.springframework.norris.chuck.ChuckNorrisQuotes;
 
 /**
@@ -11,7 +8,7 @@ import guru.springframework.norris.chuck.ChuckNorrisQuotes;
  * @author Bastian Bräunel
  *
  */
-@Configuration
+//@Configuration
 public class ChuckConfiguration {
 
 	/**
@@ -19,7 +16,7 @@ public class ChuckConfiguration {
 	 * 
 	 * @return	ChuckNorrisQuotes as a bean
 	 */
-	@Bean
+//	@Bean
 	public ChuckNorrisQuotes chuckNorrisQuotes() {
 		return new ChuckNorrisQuotes();
 	}
